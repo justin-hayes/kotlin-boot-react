@@ -9,7 +9,7 @@ buildDir = 'dist'
 
 node {
     version = '6.3.0'
-    npmVersion = '3.10.6'
+    npmVersion = '3.10.3'
     download = true
 }
 
