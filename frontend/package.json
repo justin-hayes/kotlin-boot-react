@@ -1,0 +1,34 @@
+{
+  "name": "kotlin-boot-react-frontend",
+  "version": "0.0.1",
+  "description": "React frontend for Spring Boot demo application",
+  "scripts": {
+    "start": "node server.js",
+    "bundle": "cross-env NODE_ENV=production webpack -p --optimize-dedupe",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "connect-history-api-fallback": "^1.2.0",
+    "express": "^4.14.0",
+    "html-webpack-plugin": "^2.22.0",
+    "http-proxy-middleware": "^0.17.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.1"
+  },
+  "devDependencies": {},
+  "author": "Justin Hayes",
+  "license": "MIT"
+}
