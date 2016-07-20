@@ -1,43 +1,26 @@
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    devtool: 'inline-source-map',
+    devtool: 'eval',
     entry: [
-        'webpack-hot-middleware/client',
+        'webpack-dev-server/client?http://localhost:3000',
+        'webpack/hot/only-dev-server',
         './src/index'
     ],
     output: {
         path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: 'http://localhost:3000/'
+        publicPath: '/static/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin(),
-        new webpack.DefinePlugin({
-            "process.env": {
-                NODE_ENV: JSON.stringify('development')
-            }
-        }),
-        new HtmlWebpackPlugin({
-            title: 'Kotlin-Boot-React Demo',
-            template: path.join(__dirname, 'assets/index-template.html')
-        })
+        new webpack.HotModuleReplacementPlugin()
     ],
-    resolve: {
-        extensions: ['', '.js'],
-        root: path.join(__dirname, 'src')
-    },
     module: {
         loaders: [{
             test: /\.js$/,
-            loaders: ['babel?cacheDirectory'],
+            loaders: ['react-hot', 'babel'],
             include: path.join(__dirname, 'src')
-        }, {
-            test: /\.json/,
-            loaders: ['json-loader']
         }]
     }
 };
