@@ -1,5 +1,5 @@
 package me.justinhayes.bookclub.exception
 
 
-class BookNotFoundException() : Throwable()
+class BookNotFoundException() : RuntimeException()
 class InvalidIsbnException(): RuntimeException()
