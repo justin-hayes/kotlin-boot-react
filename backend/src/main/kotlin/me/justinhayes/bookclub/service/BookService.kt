@@ -3,7 +3,7 @@ package me.justinhayes.bookclub.service
 import me.justinhayes.bookclub.client.BookClient
 import me.justinhayes.bookclub.domain.Book
 import me.justinhayes.bookclub.repository.BookRepository
-import me.justinhayes.bookclub.web.toIsbn13
+import me.justinhayes.bookclub.util.toIsbn13
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

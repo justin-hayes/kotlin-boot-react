@@ -1,4 +1,4 @@
-package me.justinhayes.bookclub.web
+package me.justinhayes.bookclub.util
 
 import me.justinhayes.bookclub.exception.InvalidIsbnException
 
