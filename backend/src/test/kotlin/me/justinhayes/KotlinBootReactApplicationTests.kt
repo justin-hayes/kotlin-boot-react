@@ -1,5 +1,6 @@
 package me.justinhayes
 
+import me.justinhayes.bookclub.KotlinBootReactApplication
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.springframework.boot.test.SpringApplicationConfiguration

@@ -1,4 +1,4 @@
-package me.justinhayes
+package me.justinhayes.bookclub
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
